@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- FIM GOOGLE FONTS-->
-     <!--BOOTSTRAP ICONS-->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-     <!--FIM BOOTSTRAP ICONS-->
-     <!--FONTAWESOME-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-     <!--FONTAWESOME FINAL-->
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--FIM BOOTSTRAP ICONS-->
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--FONTAWESOME FINAL-->
     <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
     <title>Meu Portfolio</title>
 </head>
+
 <body>
-    
+
     <header>
         <div class="interface">
             <div class="logo">
@@ -35,12 +40,35 @@
                     <li><a href="#porfolio">Projetos</a></li>
                 </ul>
             </nav>
-            
+
             <div class="btn-contato">
                 <a href="https://wa.me/05519995809893" target="_blank">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="fa-solid fa-x"></i>
+                </div><!--menu-mobile-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#porfolio">Projetos</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
         </div><!--interface-->
     </header>
 
@@ -51,10 +79,10 @@
                     <div class="txt-topo-site">
                         <a href="#inicio"></a>
                         <h1>Sejam bem vindos ao meu portfólio<span>.</span></h1>
-                        <p>Bem-vindo ao meu portfólio! Aqui, você encontrará uma seleção dos meus projetos 
-                            em desenvolvimento web, destacando minha experiência em HTML e CSS. Cada projeto 
-                            foi criado com atenção aos detalhes e à experiência do usuário, refletindo meu compromisso 
-                            com a qualidade e as melhores práticas. Navegue e descubra como posso trazer soluções 
+                        <p>Bem-vindo ao meu portfólio! Aqui, você encontrará uma seleção dos meus projetos
+                            em desenvolvimento web, destacando minha experiência em HTML e CSS. Cada projeto
+                            foi criado com atenção aos detalhes e à experiência do usuário, refletindo meu compromisso
+                            com a qualidade e as melhores práticas. Navegue e descubra como posso trazer soluções
                             criativas e funcionais para suas necessidades!</p>
 
                         <div class="btn-contato">
@@ -77,17 +105,20 @@
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="fa-brands fa-html5"></i>
-                        
+
                         <h3>HTML5</h3>
-                        <p>Tenho um bom conhecimento em HTML e gosto muito de trabalhar com essa linguagem. 
-                            Sei estruturar páginas de forma organizada e semântica, o que ajuda a criar sites mais limpos e seguindo boas práticas.</p>
+                        <p>Tenho um bom conhecimento em HTML e gosto muito de trabalhar com essa linguagem.
+                            Sei estruturar páginas de forma organizada e semântica, o que ajuda a criar sites mais
+                            limpos e seguindo boas práticas.</p>
                     </div><!--especialidades-box-->
 
                     <div class="especialidades-box">
                         <i class="fa-brands fa-css3-alt"></i>
                         <h3>CSS3</h3>
-                        <p>Tenho um forte conhecimento em CSS, o que me permite estilizar páginas com layouts bem organizados e visuais atraentes. 
-                            Gosto de ajustar detalhes e tornar cada elemento visualmente interessante, garantindo uma boa experiência para o usuário.</p>
+                        <p>Tenho um forte conhecimento em CSS, o que me permite estilizar páginas com layouts bem
+                            organizados e visuais atraentes.
+                            Gosto de ajustar detalhes e tornar cada elemento visualmente interessante, garantindo uma
+                            boa experiência para o usuário.</p>
                     </div><!--especialidades-box-->
 
                     <div class="especialidades-box">
@@ -99,7 +130,7 @@
             </div><!--interface-->
         </section><!--especialidades-->
 
-        <section id="sobre"class="sobre">
+        <section id="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -108,19 +139,22 @@
 
                     <div class="txt-sobre">
                         <h2>Muito Prazer, <span>sou Lucas Rios.</span></h2>
-                        <p>Tenho 21 anos, sou Analista de Redes e estudante de Sistemas de Informação. 
-                            Minha trajetória começou com um estágio em redes na Sencinet, onde agora atuo 
+                        <p>Tenho 21 anos, sou Analista de Redes e estudante de Sistemas de Informação.
+                            Minha trajetória começou com um estágio em redes na Sencinet, onde agora atuo
                             como Analista de Redes, sempre buscando aprimorar minhas habilidades em TI. </p>
-                        <p>Além de trabalhar com infraestrutura e suporte, sou um entusiasta no desenvolvimento 
-                            web, especialmente em HTML e CSS. Este portfólio reflete meu compromisso com 
-                            tecnologia e inovação, mostrando como aplico minhas habilidades para criar soluções 
+                        <p>Além de trabalhar com infraestrutura e suporte, sou um entusiasta no desenvolvimento
+                            web, especialmente em HTML e CSS. Este portfólio reflete meu compromisso com
+                            tecnologia e inovação, mostrando como aplico minhas habilidades para criar soluções
                             práticas e bem estruturadas.</p>
                         <div class="btn-social">
-                            <a href="https://www.instagram.com/lucasss.exe_/" target="_blank"><button><i class="fa-brands fa-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/lucas-rios-969a1918a/" target="_blank"><button><i class="fa-brands fa-linkedin"></i></button></a>
-                            <a href="https://wa.me/05519995809893" target="_blank"><button><i class="fa-brands fa-whatsapp"></i></button></a>
+                            <a href="https://www.instagram.com/lucasss.exe_/" target="_blank"><button><i
+                                        class="fa-brands fa-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/lucas-rios-969a1918a/" target="_blank"><button><i
+                                        class="fa-brands fa-linkedin"></i></button></a>
+                            <a href="https://wa.me/05519995809893" target="_blank"><button><i
+                                        class="fa-brands fa-whatsapp"></i></button></a>
                         </div><!--btn-social-->
-                    </div><!--txt-sobre-->                    
+                    </div><!--txt-sobre-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--sobre-->
@@ -157,7 +191,32 @@
             </div><!--interface-->
         </section><!--formulario-->
 
+        <footer>
+            <div class="interface">
+                <div class="line-footer">
+                    <div class="flex">
+                        <div class="logo-footer">
+                            <img src="images/logo2.png" alt="Logo site">
+                        </div><!--logo-footer-->
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/lucasss.exe_/" target="_blank"><button><i
+                                        class="fa-brands fa-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/lucas-rios-969a1918a/" target="_blank"><button><i
+                                        class="fa-brands fa-linkedin"></i></button></a>
+                            <a href="https://wa.me/05519995809893" target="_blank"><button><i
+                                        class="fa-brands fa-whatsapp"></i></button></a>
+                        </div><!--btn-social-->
+                    </div>
+                </div><!--line-footer-->
+
+                <div class="line-footer borda">
+                    <p><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:lukinhacjr@gmail.com">lukinhacjr@gmail.com</a></p>
+                </div><!--line-footer-->
+            </div><!--interface-->
+        </footer>
 
     </main>
 </body>
+
 </html>
